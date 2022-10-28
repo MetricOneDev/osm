@@ -1,6 +1,5 @@
 # Oracle Security Module
-![Build Status](https://github.com/makerdao/osm/actions/workflows/.github/workflows/tests.yaml/badge.svg?branch=master)
-
+[![.github/workflows/tests.yaml](https://github.com/MetricOneDev/osm/actions/workflows/tests.yaml/badge.svg)](https://github.com/MetricOneDev/osm/actions/workflows/tests.yaml)
 This contract is given a `DSValue` as a source to read from. You set a time interval with `step`. Whenever that `step` time has passed, it will let you `poke`. When you `poke` it reads the value from the source and stores it. The previous stored value becomes the current value. 
 
 This contracts implements `read` and `peek` from DSValue, but it is not one. It also has a new function `peep` to read what the next value will be after a `poke`.
